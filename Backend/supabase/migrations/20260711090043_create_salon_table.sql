@@ -1,0 +1,2 @@
+ALTER TABLE salon
+ADD COLUMN branch TEXT;
