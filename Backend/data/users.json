@@ -1,0 +1,47 @@
+[
+  {
+    "id": "3a98dc48-21be-4777-98ce-1e5d1a34743e",
+    "email": "loginprobe-1783845270163@example.com",
+    "fullName": "Login Probe",
+    "phone": "9876543210",
+    "password": "$2b$10$6IdrZe0p7XIX0WBx10FWeuqwnaHlkWBytFtOdveddz57dVTXc9.K6",
+    "role": "customer",
+    "createdAt": "2026-07-12T08:34:31.648Z"
+  },
+  {
+    "id": "dc9380d5-1871-4c98-9bda-4267b433217b",
+    "email": "kusalaravinda2004@gmail.com",
+    "fullName": "kusal Aravinda",
+    "phone": "0761605382",
+    "password": "$2b$10$Fq.0gLRWPheYG7ZpKtXGUOTkvvea.wrFsyNgNRS1kKXDR6nlm1Zxy",
+    "role": "customer",
+    "createdAt": "2026-07-12T08:35:30.259Z"
+  },
+  {
+    "id": "1996340c-d1b0-4a37-8685-70ff0bacc9b2",
+    "email": "saneth@gmail.com",
+    "fullName": "SANETH",
+    "phone": "0112453687",
+    "password": "$2b$10$JPXyaLQmHcGGpDrl6lQcD.KyMLKDtqELz6i.cbbkUytL2Qssf/rCm",
+    "role": "customer",
+    "createdAt": "2026-07-12T08:37:56.674Z"
+  },
+  {
+    "id": "60785ae5-99fe-48ce-9c11-ccac420c6f49",
+    "email": "saneth123@gmail.com",
+    "fullName": "Saneth rasanjana",
+    "phone": "0112453687",
+    "password": "$2b$10$nOBjmmpCH1lXANFUVDa27eFRUFyZAMKv7a2A740ZtA6JRSye8aAuG",
+    "role": "customer",
+    "createdAt": "2026-07-12T08:59:59.578Z"
+  },
+  {
+    "id": "2c9b43b3-7300-4f8a-9986-c8ca302a0f9a",
+    "email": "sanethabc@gmail.com",
+    "fullName": "Saneth rasanjana",
+    "phone": "0761605382",
+    "password": "$2b$10$vNQ9VIY36K7hhpx5gya1r./P/DoBq6K4fHwlrMKA1/0DbdPJb4tvi",
+    "role": "customer",
+    "createdAt": "2026-07-14T12:42:16.937Z"
+  }
+]
