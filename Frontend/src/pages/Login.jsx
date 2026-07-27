@@ -22,7 +22,7 @@ const EyeIcon = ({ open }) => (
   </svg>
 );
 
-const InputField = ({ label, icon, error, type = 'text', placeholder, register: reg }) => {
+const InputField = ({ label, icon, error, type = 'text', placeholder, reg }) => {
   const [showPass, setShowPass] = useState(false);
   const isPass = type === 'password';
   return (

@@ -1,5 +1,6 @@
 import { supabase } from '../config/db.js';
 import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 
 
 // register function
@@ -37,7 +38,7 @@ const register = async (req, res) => {
 
         if(error){throw error;}
 
-        res.status(201).json({message:"User registered successfully",user:data});
+        res.status(201).json({success: true, message:"User registered successfully",user:data});
 
 
     } catch(error){
@@ -82,8 +83,17 @@ const login = async (req, res) => {
             return res.status(401).json({ message: "Invalid credentials" });
         }
 
+        // Generate JWT token
+        const token = jwt.sign(
+            { id: user.id, email: user.email },
+            process.env.JWT_SECRET || 'fallback_secret_key',
+            { expiresIn: '7d' }
+        );
+
         return res.status(200).json({
+            success: true,
             message: "Login successful",
+            token,
             user: { id: user.id, email: user.email }
         });
     } catch(error){

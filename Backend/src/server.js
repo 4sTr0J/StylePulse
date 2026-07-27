@@ -3,9 +3,11 @@ import cors from "cors";
 import { config } from "dotenv"; 
 import { connectDB, disconnectDB } from "./config/db.js";
 
+
 //import routes
 import newRoute from "./routes/newroute.js";
 import authroute from "./routes/authroutes.js";
+import profileroutes from "./routes/profileroutes.js";
 
 config();
 connectDB();
@@ -22,6 +24,15 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/routes", newRoute);
 app.use("/auth", authroute); 
+
+
+
+// TEMPORARY — remove once real auth middleware is added
+app.use("/profile", (req, res, next) => {
+    req.user = { id: "14" };
+    next();
+});
+app.use("/profile", profileroutes);
 
 app.get("/hello", (req, res) => {
     res.json({"message": "Hello World"});
@@ -49,6 +60,7 @@ process.on("uncaughtException", async (err) => {
   await disconnectDB();
   process.exit(1);
 });
+
 
 // Graceful shutdown
 process.on("SIGTERM", async () => {
